@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class TitleBar extends Component {
     render() {
         return (
-            <React.Fragment>
-                Title Bar
-            </React.Fragment>
+            <div id="title-bar">
+
+            </div>
         );
     }
 }

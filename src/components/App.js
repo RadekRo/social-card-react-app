@@ -10,9 +10,15 @@ class App extends Component {
   render() {
     return (
      <React.Fragment>
-         <TitleBar/><br/>
-         <TextContainer/><br/>
-         <Picture/>
+         <div id="theme">
+             <img src="/images/title.png" alt="Social App icon" className="img-title" />
+              Social Card Application
+         </div>
+         <div id="social-card">
+            <TitleBar/><br/>
+            <TextContainer/><br/>
+            <Picture/>
+         </div>
      </React.Fragment>
     );
   }
