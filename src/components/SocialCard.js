@@ -6,9 +6,7 @@ import Picture from "./Picture";
 
 class SocialCard extends Component {
     render() {
-        console.log(this.props);
-        return (
-            <React.Fragment>
+       return (
                 <div id="social-card">
                     <TitleBar
                         user={ this.props.user }
@@ -21,7 +19,6 @@ class SocialCard extends Component {
                         img={ this.props.img }
                     />
                 </div>
-            </React.Fragment>
         );
     }
 }
