@@ -37,11 +37,11 @@ body {
 }
 
 #social-card {
-width: 600px;
-border: 1px solid #C3C3C3;
-border-radius: 3px;
-margin: 10px auto;
-box-shadow: 1px 1px 1px #C3C3C3;
+    width: 600px;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 1px #C3C3C3;
     background-color: #F3F3F3;
 }
 

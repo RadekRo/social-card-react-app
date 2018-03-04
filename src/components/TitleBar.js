@@ -15,7 +15,7 @@ class TitleBar extends Component {
                     alt="user icon"
                 />
                 <div id="title-bar-description">
-                { this.props.user } <span>dodał/a nowe zdjęcie.<br/>
+                    { this.props.user } <span>dodał/a nowe zdjęcie.<br/>
                     2 godz.</span>
                 </div>
             </div>
