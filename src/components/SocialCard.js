@@ -7,6 +7,7 @@ import Picture from "./Picture";
 class SocialCard extends Component {
     render() {
        return (
+
                 <div id="social-card">
                     <TitleBar
                         user={ this.props.user }

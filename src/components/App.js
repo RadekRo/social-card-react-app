@@ -25,6 +25,7 @@ class App extends Component {
               Social Card Application
          </div>
              { this.state.error && <p>{ this.state.error.message }</p> }
+
              { this.state.contents.map(content =>
                  <SocialCard
                      user={ content.user }

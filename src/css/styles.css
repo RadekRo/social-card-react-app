@@ -13,7 +13,7 @@ body {
     background: #E2E2E2;
     border: 1px solid #C3C3C3;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .titlebar-image {
