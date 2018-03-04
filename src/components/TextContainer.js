@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class TextContainer extends Component {
     render() {
         return (
-            <React.Fragment>
-                Text Frame
-            </React.Fragment>
+            <div id="text-container">
+                { this.props.message }
+            </div>
         );
     }
 }

@@ -1,6 +1,10 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
 #theme {
     text-align: center;
-    font-size: 42px;
+    font-size: 30px;
     color: gray;
 }
 
@@ -9,7 +13,27 @@
     background: #E2E2E2;
     border: 1px solid #C3C3C3;
     border-radius: 50%;
+    margin: 0 10px;
+}
+
+.titlebar-image {
+    float: left;
+}
+
+#title-bar {
+    height: 32px;
     margin: 10px 10px;
+}
+
+#title-bar-description {
+    color: black;
+    font-weight: bold;
+}
+
+#title-bar-description span {
+    color: #B3B3B3;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 #social-card {
@@ -18,5 +42,12 @@ border: 1px solid #C3C3C3;
 border-radius: 3px;
 margin: 10px auto;
 box-shadow: 1px 1px 1px #C3C3C3;
+    background-color: #F3F3F3;
 }
 
+#text-container {
+    margin: 5px 10px;
+    color: darkslategray;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 15px;
+}

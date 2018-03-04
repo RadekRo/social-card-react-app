@@ -10,7 +10,7 @@ class SocialCard extends Component {
             <React.Fragment>
                 <div id="social-card">
                     <TitleBar
-                        name={ this.props.name }
+                        user={ this.props.user }
                         email={ this.props.email }
                     />
                     <TextContainer
