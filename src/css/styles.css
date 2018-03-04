@@ -51,3 +51,12 @@ box-shadow: 1px 1px 1px #C3C3C3;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 15px;
 }
+
+#picture {
+    width: 580px;
+    margin: 10px;
+}
+
+#picture img {
+    width: 580px;
+}

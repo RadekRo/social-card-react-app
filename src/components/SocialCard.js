@@ -6,6 +6,7 @@ import Picture from "./Picture";
 
 class SocialCard extends Component {
     render() {
+        console.log(this.props);
         return (
             <React.Fragment>
                 <div id="social-card">
@@ -17,7 +18,7 @@ class SocialCard extends Component {
                         message={ this.props.message }
                     />
                     <Picture
-                        graph={ this.props.graph }
+                        img={ this.props.img }
                     />
                 </div>
             </React.Fragment>

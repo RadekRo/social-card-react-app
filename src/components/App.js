@@ -21,13 +21,13 @@ class App extends Component {
              <img src="/images/title.png" alt="Social App icon" className="img-title" /><br/>
               Social Card Application
          </div>
-             {this.state.contents.map((content,idx) =>
+             {this.state.contents.map(content =>
                  <SocialCard
                      user={ content.user }
                      message={ content.info }
                      email={ content.email }
-                     graph={ content.id }
-                     key={ idx }
+                     img={ content.id }
+                     key={ content.id }
                  />
              )}
      </React.Fragment>
