@@ -6,13 +6,16 @@ import SocialCard from "./SocialCard";
 class App extends Component {
 
     state = {
-        contents: [
-            { id: 1, user: 'Radek', email: 'test.dwa@wp.pl', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus ex mattis libero malesuada bibendum efficitur a enim. Nunc rutrum tellus et nunc consequat, posuere faucibus ante dictum.'  },
-            { id: 2, user: 'Marysia', email: 'nowy@onet.pl', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus ex mattis libero malesuada.'  },
-            { id: 3, user: 'Stasiek', email: 'bull@gmail.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus ex mattis libero malesuada bibendum efficitur a enim. Nunc rutrum tellus et nunc consequat.'  },
-            { id: 4, user: 'Kasia', email: 'lady@bunga.it', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus ex mattis libero malesuada bibendum efficitur a enim. Nunc rutrum tellus et nunc consequat, posuere faucibus ante dictum.'  },
-        ]
+        contents: [],
+        error: null
     };
+
+    componentDidMount() {
+        fetch('/data/userMessages.json')
+            .then(response => response.json())
+            .then(data => this.setState({ contents: data }))
+            .catch(error => this.setState({ error }))
+    }
 
   render() {
     return (
@@ -21,7 +24,8 @@ class App extends Component {
              <img src="/images/title.png" alt="Social App icon" className="img-title" /><br/>
               Social Card Application
          </div>
-             {this.state.contents.map(content =>
+             { this.state.error && <p>{ this.state.error.message }</p> }
+             { this.state.contents.map(content =>
                  <SocialCard
                      user={ content.user }
                      message={ content.info }
@@ -29,7 +33,7 @@ class App extends Component {
                      img={ content.id }
                      key={ content.id }
                  />
-             )}
+             ) }
      </React.Fragment>
     );
   }
